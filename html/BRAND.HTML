@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annabel's Dessert Studio - Brand Identity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/BRAND.CSS">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Annabel's Dessert Studio</h1>
+            <p class="subtitle">Luxury Dessert Brand Identity</p>
+        </header>
+
+        <div class="logo-showcase">
+            <div class="logo-card" onclick="openModal(0)">
+                <img src="/assets/img/kly2.png" alt="Annabel's Dessert Studio - Elegant Logo">
+                <div class="logo-info">
+                    <h3>Elegant Premium Logo</h3>
+                    <p>Handwritten script typography with chocolate dripping cupcake icon forming the letter 'A'. Perfect for high-end patisserie branding.</p>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background: #F8E8E8;" title="Soft Pink"></div>
+                        <div class="color-swatch" style="background: #5D4037;" title="Chocolate Brown"></div>
+                        <div class="color-swatch" style="background: #FFF8F0;" title="Cream"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-card" onclick="openModal(1)">
+                <img src="/assets/img/kly.png" alt="Annabel's Dessert Studio - Minimal Logo">
+                <div class="logo-info">
+                    <h3>Minimal Instagram Logo</h3>
+                    <p>Clean modern typography with cupcake and whisk icons. Instagram-ready design with feminine dessert brand aesthetic.</p>
+                    <div class="color-palette">
+                        <div class="color-swatch" style="background: #FFD6E0;" title="Pastel Pink"></div>
+                        <div class="color-swatch" style="background: #5D4037;" title="Chocolate Brown"></div>
+                        <div class="color-swatch" style="background: #F5E6D3;" title="Beige"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand-elements">
+            <h2>Brand Elements</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h4>Color Palette</h4>
+                    <p>Soft pink, chocolate brown, and cream tones create a warm, inviting luxury feel</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✒️</div>
+                    <h4>Typography</h4>
+                    <p>Elegant handwritten script paired with clean modern fonts for versatility</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🧁</div>
+                    <h4>Iconography</h4>
+                    <p>Cupcake and whisk symbols represent the artisanal dessert craftsmanship</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <h4>Style</h4>
+                    <p>Minimalist, feminine, and premium aesthetic for high-end patisserie branding</p>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button class="download-btn" onclick="downloadAssets()">Download Brand Assets</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="logoModal" onclick="closeModal(event)">
+        <span class="close-modal" onclick="closeModalBtn()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Logo Preview">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+            <button class="download-btn" onclick="downloadLogo()">Download This Logo</button>
+        </div>
+    </div>
+
+    <div class="modal-content">
+    <button class="nav prev" onclick="prevSlide()">❮</button>
+    <button class="nav next" onclick="nextSlide()">❯</button>
+
+    <img id="modalImage" src="" alt="Logo Preview">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDescription"></p>
+
+    <button class="download-btn" onclick="downloadLogo()">Download This Logo</button>
+</div>
+
+    <script src="BRAND.JS"></script>
+</body>
+</html>

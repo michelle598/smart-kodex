@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Cost in Nigeria</title>
+<link rel="stylesheet" href="/css/WEBSITE COST.CSS">
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero"></div>
+
+<!-- TITLE -->
+<div class="header-box">
+  <h1>Website Cost in Nigeria</h1>
+</div>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="intro-text">
+    <p>
+      How much does it cost to build a website in Nigeria?
+      Find out the average cost of website development in Nigeria and what factors affect the price.
+    </p>
+  </div>
+
+  <div class="intro-img">
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="cards">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+    <div class="badge">1</div>
+    <h3>Domain Name</h3>
+    <p>The cost of a domain name varies depending on the type of domain name.</p>
+  </div>
+
+  <div class="card">
+    <img src="/assets/img/9k=.jpg">
+    <div class="badge">2</div>
+    <h3>Web Hosting</h3>
+    <p>Web hosting costs vary depending on the type of hosting you choose.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+    <div class="badge">3</div>
+    <h3>Design & Development</h3>
+    <p>The cost depends on complexity of your website.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+    <div class="badge">4</div>
+    <h3>Content</h3>
+    <p>Cost varies depending on the length and complexity of content.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72">
+    <div class="badge">5</div>
+    <h3>Marketing</h3>
+    <p>The cost depends on marketing methods used.</p>
+  </div>
+
+</section>
+
+<!-- SUMMARY -->
+<section class="summary">
+  <h3>Summary</h3>
+  <p>
+    The average cost of building a website in Nigeria varies.
+    However, the final cost depends on the features and functionality.
+  </p>
+</section>
+<script>
+// Simple JS animation (fade in cards)
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if(top < window.innerHeight - 50){
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
+    }
+  });
+});
+
+// Initial style
+cards.forEach(card=>{
+  card.style.opacity = 0;
+  card.style.transform = "translateY(30px)";
+  card.style.transition = "0.5s ease";
+});
+</script>
+
+
+</body>
+</html>

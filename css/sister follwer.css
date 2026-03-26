@@ -1,0 +1,114 @@
+body {
+  background: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.flyer {
+  width: 360px;
+  margin: 20px auto;
+  background: url("/assets/img/download\ pic.jpg") no-repeat center/cover;
+  color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 15px;
+  
+}
+
+.logo {
+  width: 60px;
+}
+
+.header h3 {
+  margin: 5px 0;
+  font-size: 16px;
+  
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.title h1 {
+  font-size: 34px;
+  margin: 0;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title span {
+  color: #f5a623;
+}
+
+.year {
+  background: #7a2b2b;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+   border-color: white;
+   border-style: solid;
+  margin-top: 5px;
+  font-weight: bold;
+  /* position: absolute;
+  right: 20px;
+  left: ; */
+  text-align: end;
+}
+
+/* Theme */
+.theme {
+  text-align: center;
+  padding: 15px;
+}
+
+.theme h2 {
+  margin: 5px 0;
+  font-style: 10px;
+}
+
+.theme span {
+  font-size: 14px;
+}
+
+.green {
+  color: #1fd655;
+}
+
+/* Bottom section */
+.bottom {
+  display: flex;
+  background: #63524c;
+  padding: 15px;
+  border-radius: 0%;
+}
+
+.details {
+  width: 60%;
+  font-size: 13px;
+}
+
+.details h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.venue, .host {
+  margin-top: 10px;
+}
+
+.speaker {
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.speaker img {
+  width: 100%;
+  border-radius: 5px;
+}

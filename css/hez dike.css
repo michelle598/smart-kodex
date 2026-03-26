@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#0b3d91;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.4s;
+
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* HERO */
+.hero{
+    background:url("https://images.unsplash.com/photo-1580582932707-520aed937b7b") center/cover no-repeat;
+    height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 40px;
+    text-align:center;
+}
+
+h2{
+    color:#0b3d91;
+    margin-bottom:20px;
+}
+
+/* ABOUT */
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTACT */
+.contact-box{
+    background:white;
+    max-width:600px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:#0b3d91;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:gold;
+    color:black;
+}
+
+/* FOOTER */
+footer{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}

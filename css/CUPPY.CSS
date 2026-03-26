@@ -1,0 +1,202 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    /* Top header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #00ffb0;
+    }
+    .profile span {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .header-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 20px;
+    }
+    .header-icons .badge {
+      position: relative;
+    }
+    .header-icons .badge::after {
+      content: "3";
+      position: absolute;
+      top: -5px;
+      right: -8px;
+      background: red;
+      color: white;
+      font-size: 12px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Balance Card */
+    .balance-card {
+      background-color: #1dd3a7;
+      margin: 0 20px;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .balance-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .balance-info span {
+      margin-bottom: 5px;
+    }
+    .balance-info .balance {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .balance-card button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    /* Quick actions */
+    .quick-actions {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 20px 20px 20px;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 15px 0;
+    }
+    .quick-actions div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #00ffb0;
+    }
+    .quick-actions i {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    /* Services grid */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 0 20px 20px 20px;
+    }
+    .service-item {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0;
+      font-size: 12px;
+      cursor: pointer;
+      position: relative;
+    }
+    .service-item i {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #00ffb0;
+    }
+    .service-item .label {
+      text-align: center;
+    }
+    .service-item .up {
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ff4d6d;
+      color: #fff;
+      font-size: 10px;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    /* Saving challenge */
+    .saving-challenge {
+      background-color: #007f5f;
+      margin: 0 20px 20px 20px;
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .saving-challenge button {
+      background-color: #00ffb0;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    /* Offers banner */
+    .offers {
+      background-color: #1e1e1e;
+      margin: 0 20px 80px 20px;
+      border-radius: 12px;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* Bottom nav */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      font-size: 12px;
+      color: #fff;
+    }
+    .bottom-nav div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      color: #00ffb0;
+    }
+    .bottom-nav i {
+      font-size: 20px;
+      margin-bottom: 3px;
+    }

@@ -1,0 +1,17 @@
+@import "tailwindcss";
+/* body{
+    background-color: yellow;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+@theme{
+--vicky: arizonia cursive;
+}
+:root[
+ -vicky: arizonia cursive;
+ --mentor:black;
+--menter:yellow;
+--man-u:red
+--man-city:blue
+
+]

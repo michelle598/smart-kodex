@@ -1,0 +1,138 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#0b2f36;
+  color:white;
+}
+
+/* HERO */
+.hero{
+  background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover;
+  height:250px;
+}
+
+/* HEADER BOX */
+.header-box{
+  background:#45c1a4;
+  width:90%;
+  margin:-60px auto 20px;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+}
+
+.header-box h1{
+  font-size:2rem;
+  font-weight:bold;
+}
+
+/* INTRO */
+.intro{
+  width:90%;
+  margin:20px auto;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:20px;
+}
+
+.intro-text{
+  flex:1;
+}
+
+.intro-text p{
+  line-height:1.6;
+  color:#cfd8dc;
+}
+
+.intro-img{
+  flex:1;
+  text-align:center;
+}
+
+.intro-img img{
+  width:100%;
+  max-width:300px;
+}
+
+/* CARD SECTION */
+.cards{
+  width:90%;
+  margin:30px auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:20px;
+}
+
+.card{
+  background:#0f3a42;
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  position:relative;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* CARD IMAGE */
+.card img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* NUMBER BADGE */
+.badge{
+  position:absolute;
+  bottom:140px;
+  right:20px;
+  background:#45c1a4;
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+}
+
+/* TEXT */
+.card h3{
+  margin-top:10px;
+}
+
+.card p{
+  font-size:0.9rem;
+  color:#cfd8dc;
+  margin-top:8px;
+}
+
+/* SUMMARY */
+.summary{
+  width:90%;
+  margin:40px auto;
+  background:#d9d9d9;
+  color:#333;
+  padding:20px;
+  border-radius:15px;
+}
+
+.summary h3{
+  margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .header-box h1{
+    font-size:1.5rem;
+  }
+}

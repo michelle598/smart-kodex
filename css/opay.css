@@ -1,0 +1,89 @@
+body{
+    background:#eee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .card{
+    width:700px;
+    height:400px;
+    background:#21b997;
+    border-radius:25px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  }
+
+  /* Circular line design */
+  .circle{
+    position:absolute;
+    right:-120px;
+    top:-120px;
+    width:520px;
+    height:520px;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,0.4);
+  }
+
+  .circle::before,
+  .circle::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,0.3);
+    transform:scale(0.9);
+  }
+
+  .circle::after{
+    transform:scale(0.8);
+    border-color:rgba(255,255,255,0.2);
+  }
+
+  /* horizontal stripe box */
+  .chip{
+    position:absolute;
+    top:150px;
+    left:260px;
+    width:110px;
+    height:70px;
+    background:repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.4),
+      rgba(255,255,255,0.4) 3px,
+      transparent 3px,
+      transparent 8px
+    );
+    border-radius:6px;
+  }
+
+  /* OPay logo */
+  .logo{
+    position:absolute;
+    top:35px;
+    left:40px;
+    width:120px;
+  }
+
+  /* text */
+  .text{
+    position:absolute;
+    bottom:40px;
+    left:40px;
+    color:white;
+    font-size:28px;
+    font-weight:300;
+    letter-spacing:1px;
+  }
+
+  /* Verve logo */
+  .verve{
+    position:absolute;
+    bottom:30px;
+    right:40px;
+    width:120px;
+  }

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+}
+
+/* .center{
+  border: 6px dotted #1abc9c;
+  margin-top: 22px;
+  /* align-items: center; */
+  /* width: 80rem; */
+  /* flex-shrink: calc(justify-content); */
+
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo{
+  position: relative;
+  left: 20rem;
+}
+.logo img {
+  width: 40px;
+  /* border-radius: 50%; */
+}
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+.contact-btn {
+  background: #1abc9c;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 80px;
+  position: relative;
+  left: 10rem;
+}
+
+/* IMAGE */
+.hero img {
+  width: 350px;
+  border-radius: 4px;
+}
+
+/* TEXT CONTENT */
+.hero-text small {
+  color: #1abc9c;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin: 15px 0;
+}
+
+.hero-text h1 span {
+  color: #1abc9c;
+}
+
+.hero-text p {
+  color: #aaa;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.download-btn {
+  border: 1px solid #1abc9c;
+  color: #1abc9c;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.download-btn:hover {
+  background: #1abc9c;
+  color: black;
+}

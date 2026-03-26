@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.image-bg{
+    /* background-image: url(/assets/img/happy-business-team-cooperating-while-analyzing-their-business-progress-whiteboard-office_637285-7040.avif);
+    background-size: cover;
+    height: 100vh; */
+}
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div{
+    height: 50px;
+    width: 100px;
+    display: flex;
+}
+div:nth-child(even){
+    background-color: brown;
+    color:white;
+}
+div:nth-child(odd){
+    background-color: darkgoldenrod;
+    color: white;
+}
+.color-box{
+    width: 200px;
+    height: 100px;
+    background-color: #e68815;
+}
+
+.gradient-box{
+    width: 200px;
+    height: 100px;
+    /* background: linear-gradient(to right, rgb(184, 13, 7), rgb(153, 76, 4), yellow); */
+    /* background: linear-gradient(to right, red 20%, blue 80%);
+     */
+     /* background: linear-gradient(45deg, red, yellow); */
+
+     /* background: radial-gradient(circle, white, blue); */
+     /* background: radial-gradient(circle at center, yellow, red); */
+
+     background: conic-gradient(from 0deg, red, yellow, green, cyan, blue, magenta, red);
+
+     /* background: linear-gradient(-45deg, blue, gray); */
+}

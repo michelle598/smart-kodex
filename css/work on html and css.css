@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+
+    background-color: lightsalmon;
+    color: white;
+    font-size: 45px;
+}
+.heightlive{
+    background-color: aqua;
+    color: black;
+}
+.one{
+    font-size: 15px;
+}
+.two{
+    font-size: 30px;
+    background-color: brown;
+    color: white;
+
+    /* ID SELECTOR */
+}
+#uniqueone{
+    font-size: 15px;
+    background-color: blue;
+}
+#uniquetwo{
+    font-size: 40px;
+    background-color: chocolate;
+    color: black;
+}
+h1{
+    background-color: darkgreen;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+   background-color: rgb(238, 217, 30);
+    color: white;
+    font-size: 20px; 
+    text-align:center;
+}
+.king{
+  background-color: crimson;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+.link{
+    color: rgb(233, 171, 14);
+}

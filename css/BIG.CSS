@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: aqua;
+    color: white;
+}
+.nav-links a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.container{
+ display:grid;
+grid-template-columns:260px  320px;
+grid-template-columns: repeat(2, 1fr);
+gap:39px;
+padding:30px;
+}
+.card{
+    display: grid;
+    grid-template-columns:260px  32px ;
+    background-color: white;
+    height: 100px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid gray ;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    text-align: center;  
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(175, 15, 15);
+}
+.navbar{
+    display: grid;
+    grid-template-columns:  2fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: white;
+    color: black;
+}
+.nav-links a{
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.container{
+ display:grid;
+grid-template-columns:260px  320px;
+grid-template-columns:  1fr;
+gap:39px;
+padding:30px;
+}
+.card{
+    display: grid;
+    grid-template-columns:260px  32px ;
+    background-color: white;
+    height: 100px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid gray ;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    text-align: center;  
+}
+}
+/* TABLERT */
+@media(min-width: 600px) and (max-width: 1024px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(110, 55, 173);
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: white;
+    color: black;
+}
+.nav-links a{
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.container{
+ display:grid;
+grid-template-columns:260px  320px;
+grid-template-columns:  1fr;
+gap:39px;
+padding:30px;
+}
+.card{
+    display: grid;
+    grid-template-columns:260px  32px ;
+    background-color: white;
+    height: 100px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid gray ;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    text-align: center;  
+}
+}
+
+
+
+
+/* .amimated-box{
+width: 100px;
+height: 100px;
+border-radius: 50px;
+background-color: red;
+animation-name: roll;
+animation-duration: 10s;
+animation-iteration-count: 10;
+animation-timing-function: ease-in-out;
+animation-delay: 3ms;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+    
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes roll {
+    0%{
+        transform:   translateY(200px)   rotateX(0deg);
+    }
+    50%{
+        transform:   translateX(600px)    rotateY(180deg);
+    }
+    100%{
+        transform:      translateY(1200px)  rotateY(360deg);
+    }
+    
+}
+.globe{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background:linear-gradient(
+        blue
+        ,red
+        ,green
+        ,yellow
+        ,black
+        ,gray
+        ,white
+    
+    ) ;
+    animation-name:bounce;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3ms;
+}
+.bonce{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(218, 20, 20);
+    animation-name: bounce;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3ms;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0); 
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+    
+}
+@keyframes spin {
+    0%{
+        transform: spin(10deg);
+    }
+    50%{
+        transform: spin(180deg);
+    }
+    100%{
+        transform: spin(360deg);
+    }
+    
+} */
+/* @keyframes animation {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+} */
+
+/* /* /* body{
+    height: 190vh;
+} */
+/* .conta{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    border: 1px solid black;
+    width: 50vw;
+    height: 30vh;
+    margin: 5rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+} */
+
+/* .one, .two, .three{
+    width: 50px;
+    height: 50px;
+} */
+
+/* .one{
+    background-color: blue;
+    color: rgb(146, 78, 78);
+    position: absolute;
+    top: 10px;
+    left: 2rem;
+    z-index: 2;
+} */
+/* .two{
+    background-color: brown;
+    color: white;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    z-index: 99999000;
+} */
+/* .three{
+    background-color: aqua;
+     position: absolute;
+    top: 3rem;
+    left: 6rem;
+    z-index: 10000
+} */
+
+/* .button{
+    background-color: #3357FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition-property: background-color;
+} */
+/* .button:hover{
+    background-color: brown;
+    transition-duration: 1s;
+    transition-delay: 3ms;
+    transition-timing-function: ease-out;
+    transform: translate(30px, 40px);
+} */
+/* 
+.box-transform{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    transition: transform 0.3s ease;
+} */
+/* .box-transform:hover{ */
+    /* transform: rotate(45deg) scale(1.5) translateX(40px); */
+    /* transform: skew(10deg, 20deg); */
+    /* transform: rotateX(45deg); */
+/* }   */

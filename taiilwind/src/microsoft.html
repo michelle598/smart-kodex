@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Sign In Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./output.css" rel="stylesheet" />
+
+  <style>
+    /* Custom animation */
+    @keyframes fadeSlide {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fadeSlide {
+      animation: fadeSlide 0.8s ease forwards;
+    }
+  </style>
+</head>
+
+<body class="h-full bg-gradient-to-br from-gray-200 via-gray-100 to-gray-300 flex items-center justify-center">
+
+  <div class="w-full max-w-md space-y-6 px-4">
+
+    <!-- Main Card -->
+    <div class="bg-white shadow-xl p-8 rounded-sm animate-fadeSlide transition duration-500 hover:shadow-2xl">
+
+      <!-- Microsoft Logo -->
+      <div class="flex items-center space-x-3 mb-6">
+        <div class="grid grid-cols-2 gap-1 w-6 h-6">
+          <div class="bg-red-500"></div>
+          <div class="bg-green-500"></div>
+          <div class="bg-blue-500"></div>
+          <div class="bg-yellow-400"></div>
+        </div>
+        <span class="text-gray-700 text-lg font-semibold">Microsoft</span>
+      </div>
+
+      <!-- Title -->
+      <h2 class="text-2xl font-semibold text-gray-800 mb-1">Sign in</h2>
+      <p class="text-sm text-gray-500 mb-6">to continue to Microsoft Azure</p>
+
+      <!-- Input -->
+      <input 
+        type="text" 
+        placeholder="Email, phone, or Skype"
+        class="w-full border-b border-gray-400 focus:border-blue-600 focus:outline-none py-2 mb-4 transition duration-300"
+      >
+
+      <!-- Links -->
+      <p class="text-sm text-gray-600 mb-2">
+        No account? 
+        <a href="#" class="text-blue-600 hover:underline transition">Create one!</a>
+      </p>
+
+      <a href="#" class="text-blue-600 text-sm hover:underline block mb-6 transition">
+        Can’t access your account?
+      </a>
+
+      <!-- Button -->
+      <div class="flex justify-end">
+        <button class="bg-blue-600 text-white px-6 py-2 
+                       hover:bg-blue-700 
+                       active:scale-95 
+                       transition duration-300">
+          Next
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Bottom Card -->
+    <div class="bg-white shadow-md p-4 rounded-sm 
+                flex items-center justify-between
+                transition duration-500 hover:shadow-lg animate-fadeSlide">
+
+      <!-- Sign-in options -->
+      <div class="flex items-center space-x-3 cursor-pointer group">
+        <!-- Key Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M15 7a4 4 0 11-2-3.464V7h2zm0 0h6v4h-2v2h-2v-2h-2V7z" />
+        </svg>
+        <span class="text-gray-700 group-hover:text-blue-600 transition">
+          Sign-in options
+        </span>
+      </div>
+
+      <!-- GitHub Sign in -->
+      <div class="flex items-center space-x-3 cursor-pointer group">
+        <!-- GitHub Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-5 h-5 text-gray-700 group-hover:text-black transition"
+             viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 008 10.95c.6.1.82-.25.82-.55v-2.05c-3.25.7-3.93-1.4-3.93-1.4-.55-1.4-1.35-1.78-1.35-1.78-1.1-.75.1-.75.1-.75 1.2.1 1.85 1.25 1.85 1.25 1.05 1.8 2.75 1.3 3.45 1 .1-.8.4-1.3.75-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.45-2.4 1.25-3.25-.1-.3-.55-1.55.1-3.2 0 0 1-.3 3.3 1.25a11.3 11.3 0 016 0c2.3-1.55 3.3-1.25 3.3-1.25.65 1.65.2 2.9.1 3.2.8.85 1.25 1.95 1.25 3.25 0 4.5-2.7 5.5-5.3 5.8.45.4.8 1.1.8 2.25v3.35c0 .3.2.65.82.55A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
+        </svg>
+        <span class="text-gray-700 group-hover:text-black transition">
+          Sign in with GitHub
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html

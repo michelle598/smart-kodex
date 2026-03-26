@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .image-box{
+    background-image: url('/img/pexels-vasilisananiadis-5629850.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+body{
+   background-image: url('/assets/img/pexels-bryanhave-16854059.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.image-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-inline: 10px; */
+    /* background-color: rgb(12, 11, 11); */
+    background-color: transparent;
+    height: 2rem;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.5);
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding-bottom: 0.2rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(195, 195, 195);
+    padding-inline: 0.3rem;
+    font-size: 0.5rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+.logo{
+   padding-top: 0.3rem;
+   display: flex;
+   align-items: center;
+   gap: 0.3rem;
+}
+img{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    /* border-color: aliceblue; */
+    border: 1px solid rgb(255, 255, 255);
+}
+span{
+    color: rgb(240, 240, 238);
+    font-size: 0.5rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+a:hover{
+    color: rgb(249, 174, 12);
+    border-bottom: 1px solid rgba(241, 249, 12, 0.34);
+    background-color: rgb(113, 75, 5);
+    
+}
+
+li:hover{
+    background-color: rgb(113, 75, 5);
+    border-radius: 0.2rem;
+    animation: 1s ease-in-out 0s 1 hoverEffect;
+}
+
+
+.btn{
+    padding: 0.2rem 0.8rem;
+    color: #090808;
+    border: 1px solid rgb(139, 137, 137);
+    border-radius: 0.2rem;
+    font-size: 0.5rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+
+}
+.btn:nth-child(1){
+    background-color: rgb(84, 84, 84);
+    color: aliceblue;
+}
+.btn:hover{
+    background-color: rgb(249, 146, 12);
+    color: #080707;
+    animation: 1s ease-in-out 0s 1 hoverEffect;
+}
+@keyframes hoverEffect {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh; */
+    /* background-color: aquamarine; */
+    flex-wrap: wrap;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f2;
+    margin: 10px;
+    display: flex;
+    /* flex: 1; */
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+.flex-shrink{
+    flex-basis: 200px;
+    flex-shrink: 1;
+}

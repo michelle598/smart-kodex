@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="transition duration-500">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UMS Dashboard</title>
+ <link href="./output.css" rel="stylesheet" />
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  darkMode: "class"
+}
+</script>
+
+<style>
+/* circular progress */
+.circle{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  background:conic-gradient(#6366f1 var(--p), #e5e7eb 0);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.circle span{
+  background:white;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+}
+.dark .circle span{
+  background:#111827;
+}
+.light.circle span{
+    background: white;
+
+}
+</style>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+<div class="flex min-h-screen">
+
+<!-- SIDEBAR -->
+<aside class="w-64 bg-white dark:bg-gray-800 shadow-lg hidden lg:block p-6">
+
+<div class="flex items-center gap-2 mb-10">
+<img src="/assets/img/mus.png" class="w-10">
+<h1 class="text-2xl font-bold tracking-tighter">
+    <span class="text-black">U</span>
+    <span class="text-red-800">M</span>
+    <span class="text-black">S</span>
+</h1>
+</div>
+
+<div class="text-center mb-8">
+<img src="/assets/img/1765283916814.jpg"
+class="w-20 h-20 rounded-full mx-auto mb-2">
+<h2 class="font-semibold">Hey, Emmanuel Smart</h2>
+<p class="text-sm text-gray-500">Ahsan</p>
+</div>
+
+<ul class="space-y-3 text-sm">
+<li><b>Course:</b> BCA</li>
+<li><b>DOB:</b> 15-Sept</li>
+<li><b>Contact:</b> 99846**</li>
+<li><b>Email:</b> unknown@gmail.com</li>
+<li><b>Address:</b> NYC 10038</li>
+</ul>
+
+</aside>
+
+<!-- MAIN -->
+<main class="flex-1 p-4 md:p-8">
+
+<!-- NAV -->
+<div class="flex flex-wrap items-center justify-between mb-8">
+
+<div class="flex gap-6 text-sm font-medium">
+<a class="text-indigo-600 font-semibold"><i class="fa fa-home mr-1"></i>Home</a>
+<a><i class="fa fa-calendar mr-1"></i>Time Table</a>
+<a><i class="fa fa-table mr-1"></i>Examination</a>
+<a><i class="fa fa-key mr-1"></i>Change Password</a>
+<a><i class="fa fa-sign-out mr-1"></i>Logout</a>
+</div>
+
+<button id="themeToggle" class="px-3 py-1 rounded-lg bg-indigo-600 text-white">
+<i class="fa fa-moon"></i>
+<i class="fa-solid fa-brightness"></i>
+</button>
+
+</div>
+
+<!-- GRID -->
+<div class="grid lg:grid-cols-3 gap-6">
+
+<!-- LEFT CONTENT -->
+<div class="lg:col-span-2 space-y-6">
+
+<h2 class="text-2xl font-bold">Attendance</h2>
+
+<!-- CARDS -->
+<div class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+
+<!-- CARD -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow text-center">
+<i class="fa fa-code text-indigo-500 text-xl mb-2"></i>
+<h3 class="font-semibold">Web Development</h3>
+<p class="text-sm">12/14</p>
+<div class="circle mx-auto mt-2" style="--p:86%">
+<span>86%</span>
+</div>
+</div>
+
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow text-center">
+<i class="fa fa-database text-pink-500 text-xl mb-2"></i>
+<h3 class="font-semibold">Data Structures</h3>
+<p>27/29</p>
+<div class="circle mx-auto mt-2" style="--p:93%">
+<span>93%</span>
+</div>
+</div>
+
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow text-center">
+<i class="fa fa-desktop text-green-500 text-xl mb-2"></i>
+<h3 class="font-semibold">Operating System</h3>
+<p>27/30</p>
+<div class="circle mx-auto mt-2" style="--p:81%">
+<span>81%</span>
+</div>
+</div>
+
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow text-center">
+<i class="fa fa-lightbulb text-red-500 text-xl mb-2"></i>
+<h3 class="font-semibold">Soft Skills</h3>
+<p>24/25</p>
+<div class="circle mx-auto mt-2" style="--p:96%">
+<span>96%</span>
+</div>
+</div>
+
+<div class="bg-white dark:bg-gray-800 rounded-2xl p-4 shadow text-center">
+<i class="fa fa-wifi text-blue-500 text-xl mb-2"></i>
+<h3 class="font-semibold">IoT</h3>
+<p>25/27</p>
+<div class="circle mx-auto mt-2" style="--p:92%">
+<span>92%</span>
+</div>
+</div>
+
+</div>
+
+<!-- TABLE -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl shadow p-6">
+<h3 class="font-bold mb-4">Today's Timetable</h3>
+
+<table class="w-full text-sm">
+<thead class="text-left text-gray-500">
+<tr>
+<th>Time</th>
+<th>Room</th>
+<th>Subject</th>
+<th></th>
+</tr>
+</thead>
+
+<tbody class="space-y-2">
+<tr class="border-t">
+<td>10-11 AM</td>
+<td>38-605E</td>
+<td>CAP213</td>
+<td class="text-indigo-500">Tutorial</td>
+</tr>
+
+<tr class="border-t">
+<td>11-12 AM</td>
+<td>38-605E</td>
+<td>CAP214</td>
+<td class="text-indigo-500">Lecture</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<!-- RIGHT PANEL -->
+<div class="space-y-6">
+
+<!-- ANNOUNCEMENTS -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl shadow p-6">
+<h3 class="font-bold mb-4">Announcements</h3>
+
+<div class="space-y-3 text-sm">
+
+<p><b>Academic</b> Summer internship<br><span class="text-gray-500">2 min ago</span></p>
+
+<p><b>Co-curricular</b> Global internship<br><span class="text-gray-500">10 min ago</span></p>
+
+<p><b>Examination</b> Midterm instructions<br><span class="text-gray-500">Yesterday</span></p>
+
+</div>
+</div>
+
+<!-- TEACHERS -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl shadow p-6">
+<h3 class="font-bold mb-4">Teachers on leave</h3>
+
+<div class="flex items-center gap-3 mb-4">
+<img src="https://randomuser.me/api/portraits/men/41.jpg" class="w-12 h-12 rounded-full">
+<div>
+<p class="font-semibold">Professor</p>
+<p class="text-xs text-gray-500">Full Day</p>
+</div>
+</div>
+
+<div class="flex items-center gap-3">
+<img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full">
+<div>
+<p class="font-semibold">Lisa</p>
+<p class="text-xs text-gray-500">Half Day</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</main>
+</div>
+
+<!-- DARK MODE SCRIPT -->
+<script>
+const btn = document.getElementById("themeToggle");
+btn.onclick = () => {
+document.documentElement.classList.toggle("dark");
+};
+</script>
+
+</body>
+</html>

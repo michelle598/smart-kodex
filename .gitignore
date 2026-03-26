@@ -1,0 +1,11 @@
+# Ignore browser downloaded junk
+*.download
+*_files/
+saved_resource*
+
+# Node
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db

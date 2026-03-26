@@ -1,0 +1,47 @@
+  body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,blue,white);
+    font-family:Arial, sans-serif;
+  }
+
+  .card{
+    width:250px;
+    height:320px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:center;
+    padding:20px;
+    
+    /* animation */
+    transition: all 0.5s ease;
+  }
+
+  .card img{
+    width:120px;
+    border-radius:50%;
+    margin-top:10px;
+    transition: transform 0.5s ease;
+  }
+
+  .card h2{
+    margin:15px 0 10px;
+  }
+
+  .card p{
+    color:gray;
+    font-size:14px;
+  }
+
+  /* HOVER EFFECT */
+  .card:hover{
+    transform: translateY(-15px) scale(1.05) rotate(1deg);
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+  }
+
+  .card:hover img{
+    transform: rotate(360deg) scale(1.1);
+  }
