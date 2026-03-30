@@ -27,10 +27,9 @@ ieveting ? console.log('me is above 18 years and he has a vetrs card ') : consol
     number > 0 ? console.log('${number} is a positive number') : console.log("${number} is a negative number");
     
 
-    alert(" Hello World")
-
-  let name =  prompt("WHat is your name:")
-  console.log(name)
+    let number2 = 10;
+    number2 = -10
+    number2 > 0 ? console.log('${number2} is a positive number') : console.log("${number2} is a negative number");
 
   // WINDOW METHOD :
   // comfiem: this is a widow methood that dlsplay a dialog box with a specified message along with an OK button and a cancel button. EXMPLE:
@@ -149,4 +148,71 @@ switch (day) {
     break;
 }
 
-//
+// TERNARY OPERATOR
+// this is used to write a condition. ?(if) and :(else)
+let isRaining3 = false
+isRaining3 ? console.log("remember to take your rain coat") : console.log("no need of a rain coat")
+
+let age = 20;
+if (age >= 10) {
+  console.log("you can vote");
+} else {
+  console.log("you are a minor");
+}
+
+// loop 
+
+// 1. while loop
+// 2. for loop
+// 3. do while loop
+
+for(let i = 0; i < 1000000000000000000; i++){
+  console.log(i)
+}
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// while loop
+let j = 0;
+while (j < 10) {
+  console.log(j);
+  j++;
+}
+
+for (let chi=1; chi <= 25; chi++) {
+  if (chi  === 32) {
+    break;
+  }
+  console.log(chi);
+}
+
+//Print Even Numbers
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+//Print Odd Numbers
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+
+//Print Prime Numbers
+for (let i = 2; i <= 100; i++) {
+  let isPrime = true;
+  for (let j = 2; j < i; j++) {
+    if (i % j === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+  if (isPrime) {
+    console.log(i);
+  }
+}
+
