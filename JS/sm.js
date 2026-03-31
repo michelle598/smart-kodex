@@ -18,58 +18,70 @@ console.log(count4--);
 // TERMARY OPERATORS: this allow you to wirte a condition. ?(if) and :(else)
 let inisling = false;
 //varble ? result : result
-inisling ? console.log('you do not need an unbreliable ') : console.log('you need an unbreliable ');
+inisling
+  ? console.log("you do not need an unbreliable ")
+  : console.log("you need an unbreliable ");
 
 let ieveting = false;
-ieveting ? console.log('me is above 18 years and he has a vetrs card ') : console.log(' he not up to 18 years ');
- let number = 5;
-    number = -5
-    number > 0 ? console.log('${number} is a positive number') : console.log("${number} is a negative number");
-    
+ieveting
+  ? console.log("me is above 18 years and he has a vetrs card ")
+  : console.log(" he not up to 18 years ");
+let number = 5;
+number = -5;
+number > 0
+  ? console.log("${number} is a positive number")
+  : console.log("${number} is a negative number");
 
-    let number2 = 10;
-    number2 = -10
-    number2 > 0 ? console.log('${number2} is a positive number') : console.log("${number2} is a negative number");
+let number2 = 10;
+number2 = -10;
+number2 > 0
+  ? console.log("${number2} is a positive number")
+  : console.log("${number2} is a negative number");
 
-  // WINDOW METHOD :
-  // comfiem: this is a widow methood that dlsplay a dialog box with a specified message along with an OK button and a cancel button. EXMPLE:
-  const agree = confirm("are you sure you want to delete ");
-  console.log(agree)
+// WINDOW METHOD :
+// comfiem: this is a widow methood that dlsplay a dialog box with a specified message along with an OK button and a cancel button. EXMPLE:
+// let date = (confirm);
+// const agree = confirm("are you sure you want to delete ");
+// if (agree) {
+//   console.log("you pressed ok");
+// } else {
+//   console.log("you pressed cancel");
+// }
+// console.log(agree)
 
-  // DATE OBJECT
-  const now = new Date();
-  console.log(now);
+// DATE OBJECT
+//   const now = new Date();
+//   console.log(now);
 
-  // GETTING A FULL YEAR
-  const years = now.getFullYear();
-  console.log(now.getFullYear());
+//   // GETTING A FULL YEAR
+//   const years = now.getFullYear();
+//   console.log(now.getFullYear());
 
-  // GETTING A MONTH
-  const month = now.getMonth();
-  console.log(now.getMonth ()+1);
+//   // GETTING A MONTH
+//   const month = now.getMonth();
+//   console.log(now.getMonth ()+1);
 
-  // GETTING A DAY
-  const day = now.getDate();
-  console.log(now.getDate());
+//   // GETTING A DAY
+//   const day = now.getDate();
+//   console.log(now.getDate());
 
-  const todaysdate = `${date}${month}${years}`
-  console.log(todaysdate);
+//   const todaysdate = `${date}${month}${years}`
+//   console.log(todaysdate);
 
-  const seconds = now.getSeconds()
-const minutes = now.getMinutes()
-const hours = now.getHours()
-const milliSeconds = now.getMilliseconds()
+//   const seconds = now.getSeconds()
+// const minutes = now.getMinutes()
+// const hours = now.getHours()
+// const milliSeconds = now.getMilliseconds()
 
-const time = `${hours}:${minutes}:${seconds}`
-console.log(time);
+// const time = `${hours}:${minutes}:${seconds}`
+// console.log(time);
 
-const time2 = `${hours}:${minutes}:${seconds} ${milliSeconds}`
-console.log(time2)
-console.log(utcMIns)
-
+// const time2 = `${hours}:${minutes}:${seconds} ${milliSeconds}`
+// console.log(time2)
+// console.log(utcMIns)
 
 //CONDITIONALS
-// if , else if , else 
+// if , else if , else
 // switch, TERNARY OPERATOR
 
 // IF
@@ -77,14 +89,14 @@ console.log(utcMIns)
 //   //this part of the code is going to be executed if the condtion is true
 // }
 
-let number10 = -3
+let number10 = -3;
 if (number10 > 0) {
-  console.log(`${number} is a positive value`)
+  console.log(`${number} is a positive value`);
 }
 
-let isRaining = false
+let isRaining = false;
 if (isRaining) {
-  console.log("remember to take your rain coat")
+  console.log("remember to take your rain coat");
 }
 
 // IF ELSE
@@ -94,18 +106,18 @@ if (isRaining) {
 //   //this part of the code is going to be executed if the condtion is false
 // }
 
-let number11 = -3
+let number11 = -3;
 if (number11 > 0) {
-  console.log(`${number} is a positive value`)
+  console.log(`${number} is a positive value`);
 } else {
-  console.log(`${number} is a negative value`)
-} 
+  console.log(`${number} is a negative value`);
+}
 
-let isRaining2 = false
+let isRaining2 = false;
 if (isRaining2) {
-  console.log("remember to take your rain coat")
+  console.log("remember to take your rain coat");
 } else {
-  console.log("no need to take your rain coat")
+  console.log("no need to take your rain coat");
 }
 
 // IF ELSE IF ELSE
@@ -117,41 +129,43 @@ if (isRaining2) {
 //   //this part of the code is going to be executed if the condtion is false
 // }
 
-let weather = "sunny"
+let weather = "sunny";
 if (weather === "rainy") {
-  console.log("remember to take your rain coat")
+  console.log("remember to take your rain coat");
 } else if (weather === "cloudy") {
-  console.log("it might be clod, you need a jacket")
+  console.log("it might be clod, you need a jacket");
 } else if (weather === "sunny") {
-  console.log("go out freely")
-}else {
-  console.log("no need of a rain coat")
+  console.log("go out freely");
+} else {
+  console.log("no need of a rain coat");
 }
 
-// SWITHCH STATEMENT 
+// SWITHCH STATEMENT
 // This is used to compare are value with multiple  oprtion.... often as an aiterntive to multiple if...else statement
 
-let day8 =6
-switch (day) {
+let day8 = 6;
+switch (day8) {
   case 1:
-    console.log("monday")
+    console.log("monday");
     break;
   case 2:
-    console.log("tuesday")
+    console.log("tuesday");
     break;
 
   case 3:
-    console.log("wednesday")
+    console.log("wednesday");
     break;
   default:
-    console.log("invalid day")
+    console.log("invalid day");
     break;
 }
 
 // TERNARY OPERATOR
 // this is used to write a condition. ?(if) and :(else)
-let isRaining3 = false
-isRaining3 ? console.log("remember to take your rain coat") : console.log("no need of a rain coat")
+let isRaining3 = false;
+isRaining3
+  ? console.log("remember to take your rain coat")
+  : console.log("no need of a rain coat");
 
 let age = 20;
 if (age >= 10) {
@@ -160,14 +174,14 @@ if (age >= 10) {
   console.log("you are a minor");
 }
 
-// loop 
+// loop
 
 // 1. while loop
 // 2. for loop
 // 3. do while loop
 
-for(let i = 0; i < 1000000000000000000; i++){
-  console.log(i)
+for (let i = 0; i < 100; i++) {
+  console.log(i);
 }
 
 for (let i = 0; i < 10; i++) {
@@ -181,8 +195,8 @@ while (j < 10) {
   j++;
 }
 
-for (let chi=1; chi <= 25; chi++) {
-  if (chi  === 32) {
+for (let chi = 1; chi <= 25; chi++) {
+  if (chi === 32) {
     break;
   }
   console.log(chi);
@@ -216,3 +230,33 @@ for (let i = 2; i <= 100; i++) {
   }
 }
 
+// fuction :
+// a resuable block of code that performs a specific task.
+
+function functionname(parameter) {
+  // code to be execuited
+}
+
+function greet(name) {
+  console.log(`hello, my frist function`);
+}
+
+greet();
+// parameter.......... a variable that is listed inside the function definition
+parameter1 = "Goodness";
+parameter2 = "Grace";
+function greet3(greet2) {
+  console.log("Hello",  parameter1, parameter2);
+}
+greet3();
+
+// greet3("Valerian", 474);
+
+// RETURN STATEMENT:
+// return statement is used to return a value from a function.
+
+function add(a, b) {
+  return a + b;
+}
+let result = add(1, 2);
+console.log(result);
