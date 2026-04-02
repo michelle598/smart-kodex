@@ -260,3 +260,31 @@ function add(a, b) {
 }
 let result = add(1, 2);
 console.log(result);
+
+function add2(x,y,c = 6) {
+ console.log(x + y + c);
+  
+}
+add2(1,2)
+
+function add1(x) {
+  function add2(y) {
+    return x + y
+  }return add2
+}
+let result1 = add1(1)(2)
+console.log(result1)
+
+const myobject = {
+  name: "John",
+  age: 30,
+  address: {
+    street: "123 Main St",
+    city: "New York",
+    state: "NY",
+  }
+  
+};
+
+
+

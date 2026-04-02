@@ -1,0 +1,891 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForexElite | Global FX Investment Platform</title>
+    <link rel="stylesheet" href="/css/fx investment.css">
+    </head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">Smart<span>Forex</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#pairs">Currency Pairs</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#market-structure">Market</a>
+                <a href="#leverage">Leverage</a>
+                <a href="#risks">Risks</a>
+                <a href="#volatility">Volatility</a>
+                <a href="#getting-started" class="btn btn-primary">Start Trading</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Trade the World's <span>Largest Financial Market</span></h1>
+                    <p>Access 50+ currency pairs with competitive spreads, lightning-fast execution, and institutional-grade tools. Join millions of traders worldwide.</p>
+                    <div class="hero-buttons">
+                        <a href="#getting-started" class="btn btn-primary">Open Live Account</a>
+                        <a href="#how-it-works" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>$7.5T</h3>
+                            <p>Daily Volume</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/5</h3>
+                            <p>Market Hours</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>Countries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-placeholder">
+                        <div class="chart-lines">
+                            <svg viewBox="0 0 350 200">
+                                <polyline class="chart-line" points="0,150 40,130 80,140 120,90 160,110 200,60 240,80 280,40 320,55 350,30" />
+                                <polyline class="chart-line-2" points="0,170 50,160 100,145 150,150 200,120 250,130 300,90 350,100" />
+                            </svg>
+                        </div>
+                        <p style="color: var(--text-muted); margin-top: 20px; font-size: 0.9rem;">Live Market Analytics</p>
+                    </div>
+                    <div class="floating-card card-1">
+                        <div class="pair">EUR/USD</div>
+                        <div class="price" style="color: var(--accent);">1.08732</div>
+                        <div class="change up">▲ +0.45%</div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="pair">GBP/JPY</div>
+                        <div class="price" style="color: var(--red);">189.452</div>
+                        <div class="change down">▼ -0.32%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TICKER BAR ===== -->
+    <div class="ticker-bar">
+        <div class="ticker-content">
+            <div class="ticker-item">
+                <span class="name">EUR/USD</span>
+                <span class="price">1.08732</span>
+                <span class="change up">+0.45%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">GBP/USD</span>
+                <span class="price">1.26541</span>
+                <span class="change up">+0.22%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">USD/JPY</span>
+                <span class="price">151.234</span>
+                <span class="change down">-0.18%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">AUD/USD</span>
+                <span class="price">0.65432</span>
+                <span class="change up">+0.31%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">USD/CHF</span>
+                <span class="price">0.87654</span>
+                <span class="change down">-0.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">NZD/USD</span>
+                <span class="price">0.60123</span>
+                <span class="change up">+0.55%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">USD/CAD</span>
+                <span class="price">1.36789</span>
+                <span class="change down">-0.28%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">EUR/GBP</span>
+                <span class="price">0.85921</span>
+                <span class="change up">+0.15%</span>
+            </div>
+            <!-- Duplicate for seamless scroll -->
+            <div class="ticker-item">
+                <span class="name">EUR/USD</span>
+                <span class="price">1.08732</span>
+                <span class="change up">+0.45%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">GBP/USD</span>
+                <span class="price">1.26541</span>
+                <span class="change up">+0.22%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">USD/JPY</span>
+                <span class="price">151.234</span>
+                <span class="change down">-0.18%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">AUD/USD</span>
+                <span class="price">0.65432</span>
+                <span class="change up">+0.31%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">USD/CHF</span>
+                <span class="price">0.87654</span>
+                <span class="change down">-0.12%</span>
+            </div>
+            <div class="ticker-item">
+                <span class="name">NZD/USD</span>
+                <span class="price">0.60123</span>
+                <span class="change up">+0.55%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CURRENCY PAIRS ===== -->
+    <section id="pairs">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Popular Currency Pairs</h2>
+                <div class="underline"></div>
+                <p>Trade the most liquid and widely traded currency pairs in the global forex market.</p>
+            </div>
+            <div class="pairs-grid">
+                <!-- EUR/USD -->
+                <div class="pair-card fade-in">
+                    <div class="pair-card-header">
+                        <span class="pair-name">EUR / USD</span>
+                        <span class="pair-badge badge-major">Major</span>
+                    </div>
+                    <div class="pair-price">1.08732</div>
+                    <div class="pair-change change-up" style="color: var(--accent);">▲ +0.45% (+49 pips)</div>
+                    <div class="pair-chart">
+                        <svg viewBox="0 0 230 60">
+                            <polyline class="mini-line" stroke="var(--accent)" points="0,45 20,40 40,48 60,30 80,35 100,20 120,25 140,15 160,22 180,10 200,18 230,5" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- GBP/USD -->
+                <div class="pair-card fade-in">
+                    <div class="pair-card-header">
+                        <span class="pair-name">GBP / USD</span>
+                        <span class="pair-badge badge-major">Major</span>
+                    </div>
+                    <div class="pair-price">1.26541</div>
+                    <div class="pair-change" style="color: var(--accent);">▲ +0.22% (+28 pips)</div>
+                    <div class="pair-chart">
+                        <svg viewBox="0 0 230 60">
+                            <polyline class="mini-line" stroke="var(--accent)" points="0,35 30,30 60,40 90,25 120,28 150,15 180,20 210,10 230,12" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- USD/JPY -->
+                <div class="pair-card fade-in">
+                    <div class="pair-card-header">
+                        <span class="pair-name">USD / JPY</span>
+                        <span class="pair-badge badge-major">Major</span>
+                    </div>
+                    <div class="pair-price">151.234</div>
+                    <div class="pair-change" style="color: var(--red);">▼ -0.18% (-27 pips)</div>
+                    <div class="pair-chart">
+                        <svg viewBox="0 0 230 60">
+                            <polyline class="mini-line" stroke="var(--red)" points="0,15 30,20 60,12 90,25 120,30 150,22 180,35 210,40 230,38" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- AUD/USD -->
+                <div class="pair-card fade-in">
+                    <div class="pair-card-header">
+                        <span class="pair-name">AUD / USD</span>
+                        <span class="pair-badge badge-major">Major</span>
+                    </div>
+                    <div class="pair-price">0.65432</div>
+                    <div class="pair-change" style="color: var(--accent);">▲ +0.31% (+20 pips)</div>
+                    <div class="pair-chart">
+                        <svg viewBox="0 0 230 60">
+                            <polyline class="mini-line" stroke="var(--accent)" points="0,50 40,42 80,48 120,35 160,30 200,20 230,15" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- EUR/GBP -->
+                <div class="pair-card fade-in">
+                    <div class="pair-card-header">
+                        <span class="pair-name">EUR / GBP</span>
+                        <span class="pair-badge badge-minor">Minor</span>
+                    </div>
+                    <div class="pair-price">0.85921</div>
+                    <div class="pair-change" style="color: var(--accent);">▲ +0.15% (+13 pips)</div>
+                    <div class="pair-chart">
+                        <svg viewBox="0 0 230 60">
+                            <polyline class="mini-line" stroke="var(--accent)" points="0,30 50,35 100,25 150,28 200,18 230,20" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- USD/ZAR -->
+                <div class="pair-card fade-in">
+                    <div class="pair-card-header">
+                        <span class="pair-name">USD / ZAR</span>
+                        <span class="pair-badge badge-exotic">Exotic</span>
+                    </div>
+                    <div class="pair-price">18.7542</div>
+                    <div class="pair-change" style="color: var(--red);">▼ -0.52% (-98 pips)</div>
+                    <div class="pair-chart">
+                        <svg viewBox="0 0 230 60">
+                            <polyline class="mini-line" stroke="var(--red)" points="0,10 40,25 80,18 120,35 160,42 200,50 230,55" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section id="how-it-works">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>How FX Trading Works</h2>
+                <div class="underline"></div>
+                <p>Understanding the fundamentals of currency trading in four simple steps.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Choose a Pair</h3>
+                    <p>Select from major, minor, or exotic currency pairs based on your trading strategy and market analysis.</p>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Analyze the Market</h3>
+                    <p>Use technical and fundamental analysis to predict price movements. Study charts, economic data, and news.</p>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Buy or Sell</h3>
+                    <p>Go long (buy) if you expect the base currency to rise, or go short (sell) if you expect it to fall.</p>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Close & Profit</h3>
+                    <p>Close your position when your target is reached. Your profit or loss depends on the price difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARKET STRUCTURE ===== -->
+    <section id="market-structure">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Market Structure</h2>
+                <div class="underline"></div>
+                <p>The forex market operates through a decentralized global network of banks, institutions, and retail traders.</p>
+            </div>
+            <div class="structure-grid">
+                <div class="structure-image fade-in">
+                    <div class="globe"></div>
+                </div>
+                <div class="structure-content fade-in">
+                    <h3>Understanding the Forex Ecosystem</h3>
+                    <p>The foreign exchange market is the largest and most liquid financial market in the world, with no central exchange. Trading occurs over-the-counter (OTC) through a global network of participants.</p>
+                    <div class="structure-list">
+                        <div class="structure-list-item">
+                            <div class="icon">🏦</div>
+                            <div>
+                                <h4>Interbank Market</h4>
+                                <p>Largest banks and financial institutions trade directly with each other, setting the benchmark exchange rates.</p>
+                            </div>
+                        </div>
+                        <div class="structure-list-item">
+                            <div class="icon">🏢</div>
+                            <div>
+                                <h4>Institutional Traders</h4>
+                                <p>Hedge funds, corporations, and central banks participate for hedging, speculation, and monetary policy.</p>
+                            </div>
+                        </div>
+                        <div class="structure-list-item">
+                            <div class="icon">👤</div>
+                            <div>
+                                <h4>Retail Traders</h4>
+                                <p>Individual traders access the market through brokers, trading smaller volumes with leverage.</p>
+                            </div>
+                        </div>
+                        <div class="structure-list-item">
+                            <div class="icon">🌍</div>
+                            <div>
+                                <h4>Trading Sessions</h4>
+                                <p>Sydney → Tokyo → London → New York. Overlapping sessions create peak liquidity and volatility.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LEVERAGE & MARGIN ===== -->
+    <section id="leverage">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Leverage & Margin</h2>
+                <div class="underline"></div>
+                <p>Understand how leverage amplifies your trading power and the margin requirements involved.</p>
+            </div>
+            <div class="leverage-grid">
+                <div class="leverage-card leverage fade-in">
+                    <div class="icon-large">⚡</div>
+                    <h3>What is Leverage?</h3>
+                    <p>Leverage allows you to control a large position with a relatively small amount of capital. It's expressed as a ratio (e.g., 50:1, 100:1, 500:1).</p>
+                    <p>Leverage amplifies both profits and losses. While it can significantly increase your potential returns, it also magnifies risks.</p>
+                    <div class="leverage-example">
+                        <h4>Example: 100:1 Leverage</h4>
+                        <div class="formula">
+                            Account Balance: $1,000<br>
+                            Leverage: 100:1<br>
+                            Buying Power: $100,000<br>
+                            1% Move = $1,000 Profit/Loss (100% of account)
+                        </div>
+                    </div>
+                </div>
+                <div class="leverage-card margin fade-in">
+                    <div class="icon-large">📊</div>
+                    <h3>Margin Requirements</h3>
+                    <p>Margin is the amount of money required in your account to open and maintain a leveraged position. It acts as a good-faith deposit.</p>
+                    <p>Understanding margin is critical to managing risk and avoiding margin calls that can liquidate your positions.</p>
+                    <table class="leverage-table">
+                        <thead>
+                            <tr>
+                                <th>Leverage</th>
+                                <th>Margin %</th>
+                                <th>For $100K Position</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>50:1</td>
+                                <td>2%</td>
+                                <td>$2,000</td>
+                            </tr>
+                            <tr>
+                                <td>100:1</td>
+                                <td>1%</td>
+                                <td>$1,000</td>
+                            </tr>
+                            <tr>
+                                <td>200:1</td>
+                                <td>0.5%</td>
+                                <td>$500</td>
+                            </tr>
+                            <tr>
+                                <td>500:1</td>
+                                <td>0.2%</td>
+                                <td>$200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPOT TRADING ===== -->
+    <section id="spot-trading">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Spot Trading</h2>
+                <div class="underline"></div>
+                <p>The most common form of forex trading where currencies are bought and sold for immediate delivery.</p>
+            </div>
+            <div class="spot-grid">
+                <div class="spot-card fade-in">
+                    <div class="spot-icon">💱</div>
+                    <h3>Immediate Settlement</h3>
+                    <p>Spot trades are settled within two business days (T+2), making them ideal for tradersseeking immediate exposure to currency movements.</p>
+                </div>
+                <div class="spot-card fade-in">
+                    <div class="spot-icon">📈</div>
+                    <h3>Bid/Ask Spread</h3>
+                    <p>The difference between the buy (bid) and sell (ask) price represents your transaction cost. Major pairs typically have the tightest spreads.</p>
+                </div>
+                <div class="spot-card fade-in">
+                    <div class="spot-icon">🕐</div>
+                    <h3>24-Hour Market</h3>
+                    <p>The spot forex market operates 24 hours a day, 5 days a week, allowing you to trade at any time across global sessions.</p>
+                </div>
+            </div>
+            <div class="spot-banner fade-in">
+                <div>
+                    <h3>Start Spot Trading Today</h3>
+                    <p>With spreads as low as 0.1 pips on major pairs and execution speeds under 30ms, our platform delivers institutional-quality trading to retail investors.</p>
+                </div>
+                <a href="#getting-started" class="btn btn-primary">Open Account</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORWARD / FUTURES ===== -->
+    <section id="futures">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Forward & Futures Markets</h2>
+                <div class="underline"></div>
+                <p>Explore derivative instruments that allow you to hedge risk or speculate on future currency prices.</p>
+            </div>
+            <div class="futures-comparison">
+                <div class="futures-card forward fade-in">
+                    <h3>📋 Forward Contracts</h3>
+                    <p>Customized agreements between two parties to buy or sell a currency at a specified price on a future date. Traded OTC and highly flexible.</p>
+                    <ul class="feature-list">
+                        <li>Customizable contract size and date</li>
+                        <li>Traded over-the-counter (OTC)</li>
+                        <li>Used primarily for hedging by corporations</li>
+                        <li>No daily mark-to-market settlement</li>
+                        <li>Counterparty risk involved</li>
+                        <li>Not accessible to most retail traders</li>
+                    </ul>
+                </div>
+                <div class="futures-card futures fade-in">
+                    <h3>📊 Futures Contracts</h3>
+                    <p>Standardized contracts traded on regulated exchanges to buy/sell currencies at a predetermined price and date. Transparent and liquid.</p>
+                    <ul class="feature-list">
+                        <li>Standardized contracts on exchanges (CME)</li>
+                        <li>Central clearing reduces counterparty risk</li>
+                        <li>Daily mark-to-market settlement</li>
+                        <li>Highly regulated and transparent</li>
+                        <li>Requires margin deposits</li>
+                        <li>Accessible to retail and institutional traders</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DAY TRADING ===== -->
+    <section id="day-trading">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Day Trading Strategies</h2>
+                <div class="underline"></div>
+                <p>Master short-term trading approaches that capitalize on intraday price movements and market volatility.</p>
+            </div>
+            <div class="daytrading-grid">
+                <div class="daytrading-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <h3>Scalping</h3>
+                    </div>
+                    <p>Ultra-short-term strategy aiming for 5-10 pips per trade. Scalpers open and close positions within seconds to minutes, relying on high win rates and tight spreads.</p>
+                    <span class="tag">High Frequency</span>
+                </div>
+                <div class="daytrading-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">📉</div>
+                        <h3>Range Trading</h3>
+                    </div>
+                    <p>Identify support and resistance levels within a consolidating market. Buy near support, sell near resistance. Works best in sideways markets with clear boundaries.</p>
+                    <span class="tag">Medium Term</span>
+                </div>
+                <div class="daytrading-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">🚀</div>
+                        <h3>Momentum Trading</h3>
+                    </div>
+                    <p>Capitalize on strong directional moves driven by news, economic data, or technical breakouts. Enter trades when volatility expands in a clear direction.</p>
+                    <span class="tag">Event Driven</span>
+                </div>
+                <div class="daytrading-card fade-in">
+                    <div class="card-header">
+                        <div class="card-icon">🔄</div>
+                        <h3>Breakout Trading</h3>
+                    </div>
+                    <p>Enter positions when price breaks through key support/resistance levels or chart patterns. Place stops below the breakout level to manage risk.</p>
+                    <span class="tag">Pattern Based</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CARRY TRADE ===== -->
+    <section id="carry-trade">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Carry Trade</h2>
+                <div class="underline"></div>
+                <p>Earn interest rate differentials by borrowing in low-yield currencies and investing in high-yield ones.</p>
+            </div>
+            <div class="carry-grid">
+                <div class="carry-main fade-in">
+                    <h3>The Carry Trade Strategy</h3>
+                    <p>The carry trade is one of the most popular long-term forex strategies. It involves borrowing a currency with a low interest rate and using the funds to buy a currency with a higher interest rate. The trader earns the difference (the "carry") as long as the exchange rate remains stable or moves favorably.</p>
+                    <div class="carry-example">
+                        <h4>Example: AUD/JPY Carry Trade</h4>
+                        <p style="color: var(--text);">Borrow JPY at 0.1% interest → Buy AUD earning 4.35% interest → Net carry: +4.25% annually (plus/minus exchange rate movements)</p>
+                    </div>
+                    <p>Key considerations include interest rate differentials, economic stability, market sentiment, and global risk appetite. Carry trades perform best in stable, risk-on environments but can suffer during market turbulence.</p>
+                </div>
+                <div class="carry-sidebar fade-in">
+                    <div class="carry-stat-card">
+                        <h4>Current AUD Rate</h4>
+                        <div class="value">4.35%</div>
+                    </div>
+                    <div class="carry-stat-card">
+                        <h4>Current JPY Rate</h4>
+                        <div class="value gold">0.10%</div>
+                    </div>
+                    <div class="carry-stat-card">
+                        <h4>Net Carry</h4>
+                        <div class="value">+4.25%</div>
+                    </div>
+                    <div class="carry-pairs">
+                        <div class="carry-pair-item">
+                            <span class="pair-name">AUD/JPY</span>
+                            <span class="rate">+4.25%</span>
+                        </div>
+                        <div class="carry-pair-item">
+                            <span class="pair-name">NZD/JPY</span>
+                            <span class="rate">+5.10%</span>
+                        </div>
+                        <div class="carry-pair-item">
+                            <span class="pair-name">GBP/JPY</span>
+                            <span class="rate">+5.00%</span>
+                        </div>
+                        <div class="carry-pair-item">
+                            <span class="pair-name">USD/MXN</span>
+                            <span class="rate">+5.75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GETTING STARTED ===== -->
+    <section id="getting-started">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Get Started in 3 Steps</h2>
+                <div class="underline"></div>
+                <p>Begin your forex trading journey with our simple, secure, and fast onboarding process.</p>
+            </div>
+            <div class="gs-grid">
+                <div class="gs-card fade-in">
+                    <span class="gs-step">01</span>
+                    <div class="gs-icon">🔍</div>
+                    <h3>Select a Broker</h3>
+                    <p>Choose a regulated, reputable broker that fits your trading needs.</p>
+                    <ul>
+                        <li>Regulatory compliance (FCA, ASIC, CySEC)</li>
+                        <li>Competitive spreads & commissions</li>
+                        <li>Fast execution & reliable platform</li>
+                        <li>Multiple deposit/withdrawal methods</li>
+                        <li>Quality customer support</li>
+                        <li>Educational resources & tools</li>
+                    </ul>
+                </div>
+                <div class="gs-card fade-in">
+                    <span class="gs-step">02</span>
+                    <div class="gs-icon">📝</div>
+                    <h3>Open an Account</h3>
+                    <p>Complete the registration and verification process to start trading.</p>
+                    <ul>
+                        <li>Fill out online application form</li>
+                        <li>Provide ID & proof of address</li>
+                        <li>Complete risk assessment questionnaire</li>
+                        <li>Choose account type (Standard, ECN, etc.)</li>
+                        <li>Fund your account (bank, card, e-wallet)</li>
+                        <li>Start with a demo account to practice</li>
+                    </ul>
+                </div>
+                <div class="gs-card fade-in">
+                    <span class="gs-step">03</span>
+                    <div class="gs-icon">📊</div>
+                    <h3>Execute Trades</h3>
+                    <p>Analyze markets, manage risk, and execute your first trades.</p>
+                    <ul>
+                        <li>Analyze charts with technical tools</li>
+                        <li>Set stop-loss and take-profit orders</li>
+                        <li>Manage position size & risk (1-2% rule)</li>
+                        <li>Monitor open positions & market news</li>
+                        <li>Keep a trading journal for improvement</li>
+                        <li>Continuously learn and refine strategy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RISKS ===== -->
+    <section id="risks">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Risks & Considerations</h2>
+                <div class="underline"></div>
+                <p>Forex trading involves significant risk. Understanding these risks is essential before committing capital.</p>
+            </div>
+            <div class="risks-grid">
+                <div class="risk-card fade-in">
+                    <div class="risk-icon">⚠️</div>
+                    <div>
+                        <h3>Market Risk</h3>
+                        <p>Currency prices can move rapidly and unexpectedly due to economic data, geopolitical events, or central bank decisions, potentially resulting in significant losses.</p>
+                    </div>
+                </div>
+                <div class="risk-card fade-in">
+                    <div class="risk-icon">⚡</div>
+                    <div>
+                        <h3>Leverage Risk</h3>
+                        <p>While leverage amplifies profits, it equally magnifies losses. High leverage can result in losing more than your initial deposit very quickly.</p>
+                    </div>
+                </div>
+                <div class="risk-card fade-in">
+                    <div class="risk-icon">🏦</div>
+                    <div>
+                        <h3>Counterparty Risk</h3>
+                        <p>The risk that your broker or the other party in a trade may default on their obligations. Choose regulated brokers to minimize this risk.</p>
+                    </div>
+                </div>
+                <div class="risk-card fade-in">
+                    <div class="risk-icon">💧</div>
+                    <div>
+                        <h3>Liquidity Risk</h3>
+                        <p>During volatile periods or market gaps, you may not be able to exit positions at your desired price, especially with exotic pairs.</p>
+                    </div>
+                </div>
+                <div class="risk-card fade-in">
+                    <div class="risk-icon">🌐</div>
+                    <div>
+                        <h3>Interest Rate Risk</h3>
+                        <p>Changes in central bank interest rates can dramatically affect currency values. Rate decisions are among the most impactful market events.</p>
+                    </div>
+                </div>
+                <div class="risk-card fade-in">
+                    <div class="risk-icon">🔧</div>
+                    <div>
+                        <h3>Operational Risk</h3>
+                        <p>Technical failures, internet outages, or platform glitches can prevent you from managing positions or executing trades at critical moments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="risk-disclaimer fade-in">
+                <h3>⚠️ Important Risk Warning</h3>
+                <p>Trading forex carries a high level of risk and may not be suitable for all investors. The high degree of leverage can work against you as well as for you. Before deciding to trade foreign exchange, you should carefully consider your investment objectives, level of experience, and risk appetite. The possibility exists that you could sustain a loss of some or all of your initial investment. You should not invest money that you cannot afford to lose. Seek advice from an independent financial advisor if you have any doubts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VOLATILITY ===== -->
+    <section id="volatility">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Understanding Volatility</h2>
+                <div class="underline"></div>
+                <p>Volatility is the heartbeat of the forex market. Understanding it is key to profitable trading.</p>
+            </div>
+            <div class="volatility-grid">
+                <div class="volatility-content fade-in">
+                    <h3>What Drives Currency Volatility?</h3>
+                    <p>Volatility measures the degree of variation in currency prices over time. Higher volatility means larger price swings, which create both greater opportunities and greater risks for traders.</p>
+                    <div class="volatility-factors">
+                        <div class="vol-factor">
+                            <div class="vol-icon">📰</div>
+                            <div>
+                                <h4>Economic News & Data</h4>
+                                <p>NFP, GDP, CPI, and central bank decisions can cause immediate and significant price movements across all pairs.</p>
+                            </div>
+                        </div>
+                        <div class="vol-factor">
+                            <div class="vol-icon">🌍</div>
+                            <div>
+                                <h4>Geopolitical Events</h4>
+                                <p>Elections, trade disputes, wars, and policy changes create uncertainty that drives currency volatility.</p>
+                            </div>
+                        </div>
+                        <div class="vol-factor">
+                            <div class="vol-icon">🏛️</div>
+                            <div>
+                                <h4>Central Bank Policy</h4>
+                                <p>Interest rate decisions, QE programs, and forward guidance from central banks are primary volatility drivers.</p>
+                            </div>
+                        </div>
+                        <div class="vol-factor">
+                            <div class="vol-icon">⏰</div>
+                            <div>
+                                <h4>Trading Session Overlaps</h4>
+                                <p>The London-New York overlap (8AM-12PM EST) sees the highest volume and volatility of the trading day.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="volatility-chart-card fade-in">
+                    <h4>Average Daily Volatility by Pair (Pips)</h4>
+                    <div class="vol-chart">
+                        <div class="vol-bars">
+                            <div class="vol-bar-group">
+                                <div class="vol-bar high"></div>
+                                <span class="vol-label">GBP/JPY</span>
+                            </div>
+                            <div class="vol-bar-group">
+                                <div class="vol-bar high"></div>
+                                <span class="vol-label">EUR/JPY</span>
+                            </div>
+                            <div class="vol-bar-group">
+                                <div class="vol-bar med"></div>
+                                <span class="vol-label">GBP/USD</span>
+                            </div>
+                            <div class="vol-bar-group">
+                                <div class="vol-bar med"></div>
+                                <span class="vol-label">AUD/USD</span>
+                            </div>
+                            <div class="vol-bar-group">
+                                <div class="vol-bar med"></div>
+                                <span class="vol-label">EUR/USD</span>
+                            </div>
+                            <div class="vol-bar-group">
+                                <div class="vol-bar low"></div>
+                                <span class="vol-label">USD/CHF</span>
+                            </div>
+                            <div class="vol-bar-group">
+                                <div class="vol-bar low"></div>
+                                <span class="vol-label">EUR/CHF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vol-legend">
+                        <div class="vol-legend-item">
+                            <span class="dot high"></span> High Volatility (150+ pips)
+                        </div>
+                        <div class="vol-legend-item">
+                            <span class="dot med"></span> Medium (80-150 pips)
+                        </div>
+                        <div class="vol-legend-item">
+                            <span class="dot low"></span> Low (<80 pips)
+                        </div>
+                    </div>
+                    <div style="margin-top: 25px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">💡 <strong style="color: var(--text);">Tip:</strong> Adjust your position size and stop-loss distances based on current volatility. High volatility requires wider stops and smaller positions to manage risk effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon"></div>
+                        <span class="logo-text">Forex<span>Elite</span></span>
+                    </a>
+                    <p>Your trusted platform for global forex trading education and market analysis. Trade smarter, not harder.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Trading</h4>
+                    <ul>
+                        <li><a href="#pairs">Currency Pairs</a></li>
+                        <li><a href="#spot-trading">Spot Trading</a></li>
+                        <li><a href="#futures">Futures</a></li>
+                        <li><a href="#carry-trade">Carry Trade</a></li>
+                        <li><a href="#day-trading">Day Trading</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Education</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#leverage">Leverage Guide</a></li>
+                        <li><a href="#market-structure">Market Structure</a></li>
+                        <li><a href="#volatility">Volatility</a></li>
+                        <li><a href="#risks">Risk Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ForexElite. All rights reserved. Trading forex involves substantial risk of loss.</p>
+                <div class="social-links">
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="LinkedIn">in</a>
+                    <a href="#" title="YouTube">▶</a>
+                    <a href="#" title="Telegram">✈</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Scroll Animation (Intersection Observer)
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 5px 30px rgba(0,0,0,0.3)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
