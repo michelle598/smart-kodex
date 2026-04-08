@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="/css/forget.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Forgot password?</h1>
+        <p class="subtitle">Enter your registered email to reset<br>your password</p>
+
+        <form id="forgotPasswordForm">
+            <div class="form-group">
+                <input type="text" class="input-field" placeholder="Enter your email or phone" required>
+            </div>
+
+             <!-- <button type="submit" class="send-btn" id="sendOtpBtn">Send OTP Code</button> -->
+              <button type="submit" class="send-btn" onclick="window.location.href='come.html'">Send OTP Code</button>
+        </form>
+
+        <a href="/html/proje.html" class="back-link" onclick="goBack()">
+            <span class="arrow">←</span>
+            Back to login
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('forgotPasswordForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const inputValue = this.querySelector('input').value.trim();
+                        if (inputValue) {
+                alert('OTP code sent to your email/phone!');
+                // Here you would send the request to your server
+                console.log('Sending OTP to:', inputValue);
+            }else {
+                alert('Please enter your email or phone number')
+            }
+        });
+
+        function goBack() {
+            // Redirect to login page
+            alert('Redirecting to login page...');
+            // window.location.href = '/login';
+        }
+
+        // Add input focus effect
+        const input = document.querySelector('.input-field');
+        input.addEventListener('focus', function() {
+            this.style.transform = 'scale(1.02)';
+        });
+        
+        input.addEventListener('blur', function() {
+            this.style.transform = 'scale(1)';
+        });
+        // const otpButton = document.getElementById('sendOtpBtn');
+        // otpButton.addEventListener('click', function(){
+        //     window.location.href = 'come.html';
+        // });
+    </script>
+</body>
+</html>

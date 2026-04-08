@@ -285,6 +285,16 @@ const myobject = {
   }
   
 };
+const object ={
+  firstname: "vicky",
+  lastname: "valerian",
+  age: 20,
+  address: "lagos, Nigeria",
+}
+
+person. gender = "male";
+delete person.gender
+console.log(person.gender)
 
 
 

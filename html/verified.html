@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Verified</title>
+<link rel="stylesheet" href="/css/verified.css">
+</head>
+
+<body>
+
+<div class="card">
+    <div class="title">Email</div>
+
+    <!-- SVG ICON -->
+    <svg class="icon" viewBox="0 0 100 100">
+        <polygon points="30,20 70,20 85,50 70,80 30,80 15,50" 
+                 fill="none" stroke="#2ecc71" stroke-width="5"/>
+        <polyline points="30,50 45,65 75,35" 
+                  fill="none" stroke="#2ecc71" stroke-width="5"/>
+    </svg>
+
+    <div class="verified">Verified</div>
+
+    <button class="btn" onclick="goBack()">
+        <span class="arrow">←</span>
+        Back to login
+    </button>
+</div>
+
+<script>
+    function goBack() {
+        alert("Going back to login...");
+        // You can replace this with actual navigation:
+        window.location.href = "proje.html";
+    }
+</script>
+
+</body>
+</html>

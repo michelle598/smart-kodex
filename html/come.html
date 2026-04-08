@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verification Code</title>
+<link rel="stylesheet" href="/css/come.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Enter verification code</h2>
+    <p>Enter the 6-digit code from your authenticator</p>
+
+    <div class="code-box">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+    </div>
+
+    <div class="options">
+        <input type="checkbox">
+        <label>Resend code ?</label>
+    </div>
+
+    <button type="submit" onclick="verifyCode()">Verify</button>
+</div>
+
+<script>
+// Auto move to next input
+const inputs = document.querySelectorAll(".code-box input");
+
+inputs.forEach((input, index) => {
+    input.addEventListener("input", () => {
+        if (input.value.length === 1 && index < inputs.length - 1) {
+            inputs[index + 1].focus();
+        }
+    });
+
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Backspace" && index > 0 && input.value === "") {
+            inputs[index - 1].focus();
+        }
+    });
+});
+
+// Verify button function
+function verifyCode() {
+    let code = "";
+    inputs.forEach(input => code += input.value);
+
+    if (code.length === 6) {
+        alert("Code entered: " + code);
+        window.location.href='verified.html';
+    } else {
+        alert("Please enter complete code");
+    }
+}
+</script>
+
+</body>
+</html>
