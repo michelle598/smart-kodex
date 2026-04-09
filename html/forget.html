@@ -15,9 +15,7 @@
             <div class="form-group">
                 <input type="text" class="input-field" placeholder="Enter your email or phone" required>
             </div>
-
-             <!-- <button type="submit" class="send-btn" id="sendOtpBtn">Send OTP Code</button> -->
-              <button type="submit" class="send-btn" onclick="window.location.href='come.html'">Send OTP Code</button>
+            <button type="submit" class="send-btn" >Send OTP Code</button>
         </form>
 
         <a href="/html/proje.html" class="back-link" onclick="goBack()">
@@ -34,7 +32,8 @@
                         if (inputValue) {
                 alert('OTP code sent to your email/phone!');
                 // Here you would send the request to your server
-                console.log('Sending OTP to:', inputValue);
+                // console.log('Sending OTP to:', inputValue);
+                window.location.href = 'come.html?source=forgot';
             }else {
                 alert('Please enter your email or phone number')
             }
@@ -43,7 +42,6 @@
         function goBack() {
             // Redirect to login page
             alert('Redirecting to login page...');
-            // window.location.href = '/login';
         }
 
         // Add input focus effect
@@ -55,10 +53,6 @@
         input.addEventListener('blur', function() {
             this.style.transform = 'scale(1)';
         });
-        // const otpButton = document.getElementById('sendOtpBtn');
-        // otpButton.addEventListener('click', function(){
-        //     window.location.href = 'come.html';
-        // });
     </script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+*{
+  background-color: green;
+  background-color: white;
+}
+
+
+.boy {
+  background-color: blue;
+}
+
+.dark {
+  background-color: green;
+  color: white;
+}
+
+.girl {
+  background-color: pink;
+}

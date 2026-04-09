@@ -283,18 +283,57 @@ const myobject = {
     city: "New York",
     state: "NY",
   }
-  
-};
-const object ={
-  firstname: "vicky",
-  lastname: "valerian",
-  age: 20,
-  address: "lagos, Nigeria",
-}
+  //USING DOT NOTATION TO ACCESS OBJECT PROPERTIES
+// console.log(person.firstname),
+// console.log(person.lastname),
+// console.log(myobject.name),
+// console.log(myobject["address"]["city"]),
+// };
+// const object ={
+//   firstname: "vicky",
+//   lastname: "valerian",
+//   age: 20,
+//   address: "lagos, Nigeria",
+// }
 
-person. gender = "male";
-delete person.gender
-console.log(person.gender)
+// person. gender = "male";
+// delete person.gender
+// console.log(person.gender)
 
+//EVENT
+// an event is an action that happens in the browser which javascript can detect and respond to
+
+//types of event
+// 1. click.....when a user clicks on an element
+// 2. mouseover.......when the moude move over an element
+// 3. keydown.......when keyboard a key is pressed
+// 4. submit........when a form is submitted
+// 5. load..........when a page is loaded
+
+//EVENT HANDLER / LISTENER
+// AN EVENT HADLER 
+
+// function greet2() {
+//   alert("hello , wellcome to javascript");
+// }
+
+// element.addEventListener(event, function)
+
+// const button = document.getElementById("btn");
+// button.addEventListener("click", function () {
+//   alert("hello , wellcome to javascript");
+// });
+
+// button.addEventListener("click", function () {
+//   alert("hello , wellcome to javascript");
+// });
+
+// const title = document.getElementById("title");
+// const btnchange =document.getElementById("btnchange");
+
+// btnchange.addEventListener("click", function () {
+//   title.textContent = "javascript is awesome";
+// })
+// console.log("khvtdytf");
 
 

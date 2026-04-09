@@ -55,8 +55,16 @@ function verifyCode() {
     inputs.forEach(input => code += input.value);
 
     if (code.length === 6) {
-        alert("Code entered: " + code);
-        window.location.href='verified.html';
+        // 1. Check if we are currently in the 'forgot' flow
+        const urlParams = new URLSearchParams(window.location.search);
+        const source = urlParams.get('source');
+
+        // 2. If we are, pass that signal to the NEXT page
+        if (source === 'forgot') {
+            window.location.href = 'verified.html?source=forgot';
+        } else {
+            window.location.href = 'verified.html';
+        }
     } else {
         alert("Please enter complete code");
     }
