@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Dashboard</title>
+<link rel="stylesheet" href="/css/Learning.css">
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2><img src="/assets/img/Vector.png" width="50" alt></i>  Prac2learn</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="window.location.href='dashboard.html'">
+                    <img src="/assets/img/Frame (1).png" width="30" alt>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active"  onclick="window.location.href='user.html'">
+                        <img src="/assets/img/user.png" width="30" alt>
+                        <span>User</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" >
+                       <img src="/assets/img/Frame.png" width="30" alt>
+                       <span>Learning</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                         <img src="/assets/img/Frame (2).png" width="30" alt>
+                         <span>Progress</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                         <img src="/assets/img/Frame (3).png" width="30" alt>
+                        <span>Payment</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                       <img src="/assets/img/Frame (4).png" width="30" alt>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+<!-- HEADER -->
+  <main class="main-content">
+      <div class="header">
+        <h1>Overview</h1>
+        <!-- <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search...">
+        </div> -->
+          <div class="search-box">
+    <i class="fa fa-search"></i>
+    <input type="text" placeholder="Search">
+  </div>
+      </div>
+
+      <!-- Main Content -->
+
+<!-- SECTION -->
+<div class="section-header">
+  <h2>Course Catalog</h2>
+  <button class="btn">+ Create Course</button>
+</div>
+
+<!-- GRID -->
+<div class="grid">
+
+  <!-- CARD 1 -->
+  <div class="card">
+    <img src="/assets/img/ux.png" />
+    <div class="card-content">
+      <div class="badges">
+        <span class="badge blue">Design</span>
+        <span class="badge green">Active</span>
+      </div>
+      <h3>UI/UX Design Fundamentals</h3>
+      <small>by Amara Diallo</small>
+
+      <div class="meta">
+        <span><i class="fa fa-clock"></i> 4 weeks</span>
+        <span><i class="fa fa-user"></i> 342</span>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" data-progress="40"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card">
+    <img src="/assets/img/react.png" />
+    <div class="card-content">
+      <div class="badges">
+        <span class="badge blue">Development</span>
+        <span class="badge green">Active</span>
+      </div>
+      <h3>React.js  Complete Guide</h3>
+      <small>by James okoye</small>
+      <div class="meta">
+        <span><i class="fa fa-clock"></i> 12 weeks  15m</span>
+        <span><i class="fa fa-user"></i> 2,156</span>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" data-progress="30"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card">
+    <img src="/assets/img/data.png" />
+    <div class="card-content">
+      <div class="badges">
+        <span class="badge blue">Data</span>
+        <span class="badge green">Active</span>
+      </div>
+      <h3>Data science with python</h3>
+      <small>By Tech Guru</small>
+
+      <div class="meta">
+        <span><i class="fa fa-clock"></i>15 hrs</span>
+        <span><i class="fa fa-user"></i> 1,820</span>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" data-progress="40"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card">
+    <img src="/assets/img/Digital Marketing Mastery.png" />
+    <div class="card-content">
+      <div class="badges">
+        <span class="badge blue">Marketing</span>
+        <span class="badge green">Active</span>
+      </div>
+      <h3>Digital Marketing Mastery</h3>
+      <small>by  Kemi adeyemi</small>
+
+      <div class="meta">
+        <span><i class="fa fa-clock"></i> 6h 54m</span>
+        <span><i class="fa fa-user"></i> 987</span>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" data-progress="90"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/assets/img/Customer Service And Tools.png" />
+    <div class="card-content">
+      <div class="badges">
+        <span class="badge blue">Marketing</span>
+        <span class="badge green">Active</span>
+      </div>
+      <h3>Customer Service And Tools</h3>
+      <small>by Amara Diallo</small>
+
+      <div class="meta">
+        <span><i class="fa fa-clock"></i> 15 hrs</span>
+        <span><i class="fa fa-user"></i> 1,820</span>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" data-progress="40"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="/assets/img/Affiliate Marketing.png" />
+    <div class="card-content">
+      <div class="badges">
+        <span class="badge blue">Marketing</span>
+        <span class="badge green">Active</span>
+      </div>
+      <h3>Affiliate Marketing</h3>
+      <small>by Amara Diallo</small>
+
+      <div class="meta">
+        <span><i class="fa fa-clock"></i> 15 hrs</span>
+        <span><i class="fa fa-user"></i> 1,820</span>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar" data-progress="40"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script>
+// Animate progress bars
+document.querySelectorAll('.progress-bar').forEach(bar => {
+  let value = bar.getAttribute('data-progress');
+  setTimeout(() => {
+    bar.style.width = value + '%';
+  }, 300);
+});
+</script>
+
+</body>
+</html>

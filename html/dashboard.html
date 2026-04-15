@@ -1,0 +1,342 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuBrain Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    </head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>
+                <img src="/assets/img/Vector.png" width="50" alt="">
+                Prac2learn
+            </h2>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">
+                    <img src="/assets/img/Frame (1).png" width="30" alt="">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/html/user.html" class="nav-link" onclick="window.location.href='user.html'">
+                    <img src="/assets/img/user.png" width="30" alt="">
+                    <span>User</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" onclick="window.location.href='Learning.html'">
+                  <img src="/assets/img/Frame.png" width="30" alt="">
+                    <span>Learning</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="/assets/img/Frame (2).png" width="30" alt="">
+                    <span>Progress</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="/assets/img/Frame (3).png" width="30" alt="">
+                    <span>Payment</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="/assets/img/Frame (4).png" width="30" alt="">
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="header">
+            <h1>Overview</h1>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Total Sales</h3>
+                    <div class="value">3,284</div>
+                    <div class="change">
+                        <span>12% this Month</span>
+                    </div>
+                </div>
+                <div class="stat-icon blue">
+                    <img src="/assets/img/Group 51.png" width="30" alt="">
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Courses</h3>
+                    <div class="value">40</div>
+                    <div class="change">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>3 new this month</span>
+                    </div>
+                </div>
+                <div class="stat-icon purple">
+                    <img src="/assets/img/sm.png" width="30" alt="">
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Completion Rate</h3>
+                    <div class="value">71%</div>
+                    <div class="change negative">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>2% vs last month</span>
+                    </div>
+                </div>
+                <div class="stat-icon orange">
+                    <img src="/assets/img/wk.png" width="30" alt="">
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-info">
+                    <h3>Total Revenue</h3>
+                    <div class="value">₦150,000</div>
+                    <div class="change">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>8% vs last month</span>
+                    </div>
+                </div>
+                <div class="stat-icon green">
+                    <img src="/assets/img/km.png" width="30" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Active Courses -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Active Courses</h2>
+                    <a href="#" class="view-all">See All</a>
+                </div>
+                <div class="course-list">
+                    <div class="course-item">
+                        <div class="course-icon">
+                            <img src="/assets/img/Frame 233.png" width="30" alt="">
+                        </div>
+                        <div class="course-details">
+                            <div class="course-name">Web Development</div>
+                            <div class="course-progress">
+                                <div class="progress-bar" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="course-meta">
+                            <div class="students">1.2k students</div>
+                            <div class="percentage">78%</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-icon">
+                            <img src="/assets/img/Frame 233.png" width="30" alt="">
+                        </div>
+                        <div class="course-details">
+                            <div class="course-name">UI/UX Design Fundamentals</div>
+                            <div class="course-progress">
+                                <div class="progress-bar" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div class="course-meta">
+                            <div class="students">856 students</div>
+                            <div class="percentage">45%</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-icon">
+                          <img src="/assets/img/Frame 233.png" width="30" alt="">
+                        </div>
+                        <div class="course-details">
+                            <div class="course-name">Data Science Essentials</div>
+                            <div class="course-progress">
+                                <div class="progress-bar" style="width: 62%"></div>
+                            </div>
+                        </div>
+                        <div class="course-meta">
+                            <div class="students">2.1k students</div>
+                            <div class="percentage">62%</div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-icon">
+                            <img src="/assets/img/Frame 233.png" width="30" alt="">
+                        </div>
+                        <div class="course-details">
+                            <div class="course-name">Digital Marketing</div>
+                            <div class="course-progress">
+                                <div class="progress-bar" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div class="course-meta">
+                            <div class="students">943 students</div>
+                            <div class="percentage">91%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Recent Activity</h2>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon success">
+                            <img src="/assets/img/peron.png" width="30" alt="">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-text">New User registered</div>
+                            <div class="activity-text">John Simon joined</div>
+                            <div class="activity-time">2 min ago</div>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon info">
+                            <img src="/assets/img/hk.png" width="30" alt="">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-text">Course completed</div>
+                            <div class="activity-text">Sarah finished UI/UX</div>
+                            <div class="activity-time">15 min ago</div>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon warning">
+                            <img src="/assets/img/rk.png" width="30" alt="">
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-text">
+                                <p>Payment received</p>
+                                <p>₦120,000 received from Samuel</p>
+                            </div>
+                          
+                            <div class="activity-time">6 hours ago</div>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon success">
+                            <img src="/assets/img/rk.png" width="30" alt="">
+                        </div>
+                        <div class="activity-content">
+                             <div class="activity-text">Payment received</div>
+                            <div class="activity-text">₦120,000 received from Samuel</div>
+                            <div class="activity-time">6 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Chart -->
+        <div class="chart-container">
+            <div class="chart-header">
+                <h2 class="chart-title">Revenue Overview</h2>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Revenue Chart
+        const ctx = document.getElementById('revenueChart').getContext('2d');
+        const revenueChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Revenue',
+                    data: [32000, 35000, 38000, 36000, 40000, 43000, 41000, 45000, 48000, 46000, 50000, 53000],
+                    backgroundColor: '#2563eb',
+                    borderRadius: 8,
+                    borderSkipped: false,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#f1f5f9'
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value/1000 + 'k';
+                            },
+                            color: '#64748b'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        },
+                        ticks: {
+                            color: '#64748b'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Animate progress bars on load
+        window.addEventListener('load', () => {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+        });
+
+        // Add hover effects to nav items
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

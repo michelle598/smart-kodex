@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/css/user.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <h2><img src="/assets/img/Vector.png" width="50" alt></i> Prac2learn
+        </h2>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link"
+            onclick="window.location.href='dashboard.html'">
+            <img src="/assets/img/Frame (1).png" width="30" alt>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active">
+            <img src="/assets/img/user.png" width="30" alt>
+            <span>User </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"onclick="window.location.href='Learning.html'">
+            <img src="/assets/img/Frame.png" width="30" alt>
+            <span>Learning</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <img src="/assets/img/Frame (2).png" width="30" alt>
+            <span>Progress</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <img src="/assets/img/Frame (3).png" width="30" alt>
+            <span>Payment</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <img src="/assets/img/Frame (4).png" width="30" alt>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <div class="header">
+        <h1>Overview</h1>
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+      
+
+      <!-- Main Content -->
+      <main class="main-content2">
+        <div class="header2">
+          <h1>User Management</h1>
+          <div class="header-actions">
+            <div class="search-box">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                placeholder="Search users..."
+                id="searchInput" />
+            </div>
+            <button class="btn btn-secondary">
+              <i class="fas fa-search"></i>
+              All Roles
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-plus"></i>
+              Add User
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Status</th>
+                  <th>Enrolled Courses</th>
+                  <th>Completion</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody id="userTable">
+                <tr>
+                  <td>
+                    <div class="user-info">
+                      <div class="avatar">BO</div>
+                      <div class="user-details">
+                        <h4>Blessing obi</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="status status-active">inactive</span></td>
+                  <td>Data science</td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%"></div>
+                      </div>
+                      <span class="progress-text">80%</span>
+                    </div>
+                  </td>
+                  <td class="date">Mar 05,2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                      <div
+                        class="avatar"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            #f093fb 0%,
+                            #f5576c 100%
+                          );
+                        ">
+                        OA
+                      </div>
+                      <div class="user-details">
+                        <h4>Olumide Adesanya</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="status status-active">Active</span></td>
+                  <td>React Basic Node.js</td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 55%"></div>
+                      </div>
+                      <span class="progress-text">55%</span>
+                    </div>
+                  </td>
+                  <td class="date">Feb 28, 2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                      <div
+                        class="avatar"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            #4facfe 0%,
+                            #00f2fe 100%
+                          );
+                        ">
+                        NE
+                      </div>
+                      <div class="user-details">
+                        <h4>Ngozi Eze</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="status status-expired">Active</span></td>
+                  <td>product management</td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%"></div>
+                      </div>
+                      <span class="progress-text">88%</span>
+                    </div>
+                  </td>
+                  <td class="date">Dec 15, 2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                      <div
+                        class="avatar"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                           #1FE24A42 26%
+                            #38f9d7 100%
+                          );
+                        ">
+                        AY
+                      </div>
+                      <div class="user-details">
+                        <h4>Amina Yusuf</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="status status-expired">suspended</span></td>
+                  <td>cyber security</td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 12%"></div>
+                      </div>
+                      <span class="progress-text">12%</span>
+                    </div>
+                  </td>
+                  <td class="date">Jan 8,2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                      <div
+                        class="avatar"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            #fa709a 0%,
+                            #fee140 100%
+                          );
+                        ">
+                        C0
+                      </div>
+                      <div class="user-details">
+                        <h4>Chinedu okafor</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="status status-pending">inactive</span></td>
+                  <td>product management</td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 34%"></div>
+                      </div>
+                      <span class="progress-text">34%</span>
+                    </div>
+                  </td>
+                  <td class="date">Mar 20,2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                      <div
+                        class="avatar"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            #30cfd0 0%,
+                            #330867 100%
+                          );
+                        ">
+                        FB
+                      </div>
+                      <div class="user-details">
+                        <h4>Fatima Bello</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="status status-active">Active</span></td>
+                  <td>Web Development</td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 92%"></div>
+                      </div>
+                      <span class="progress-text">92%</span>
+                    </div>
+                  </td>
+                  <td class="date">Jan 12, 2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="user-info">
+                      <div
+                        class="avatar"
+                        style="
+                          background: linear-gradient(
+                            135deg,
+                            #a8edea 0%,
+                            #fed6e3 100%
+                          );
+                        ">
+                        EN
+                      </div>
+                      <div class="user-details">
+                        <h4>Emeka Nwachukwu</h4>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="status status-pending">inactive</span></td>
+                  <td>UI/Ux Design</td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 34%"></div>
+                      </div>
+                      <span class="progress-text">34%</span>
+                    </div>
+                  </td>
+                  <td class="date">Mar 24, 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // Search functionality
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", function (e) {
+          const searchTerm = e.target.value.toLowerCase();
+          const rows = document.querySelectorAll("#userTable tr");
+
+          rows.forEach((row) => {
+            const userName = row.querySelector("h4").textContent.toLowerCase();
+            const userEmail = row
+              .querySelector(".user-details p")
+              .textContent.toLowerCase();
+
+            if (
+              userName.includes(searchTerm) ||
+              userEmail.includes(searchTerm)
+            ) {
+              row.style.display = "";
+            } else {
+              row.style.display = "none";
+            }
+          });
+        });
+
+      // Add User button click
+      document
+        .querySelector(".btn-primary")
+        .addEventListener("click", function () {
+          alert("Add User modal would open here");
+        });
+
+      // Animate progress bars on load        window.addEventListener('load', function() {
+      const progressFills = document.querySelectorAll(".progress-fill");
+      progressFills.forEach((fill, index) => {
+        const width = fill.style.width;
+        fill.style.width = "0%";
+        setTimeout(() => {
+          fill.style.width = width;
+        }, index * 100);
+      });
+
+      // Navigation active state
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          document
+            .querySelectorAll(".nav-link")
+            .forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
