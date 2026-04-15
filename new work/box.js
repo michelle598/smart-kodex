@@ -33,7 +33,7 @@ document.getElementById("resetBtn2").addEventListener("click", function () {
 
 let count3 = 0;
 const min3 = 0;
-const max3 = 20;
+const max3 = 100;
 
 const countDisplay3 = document.getElementById("count3");
 const increaseBtn3 = document.getElementById("increaseBtn3");
