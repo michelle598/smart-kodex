@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <link rel="stylesheet" href="/mim/mim.css">
+  </head>
+  <body>
+    <div class="dashbaord">
+      <h2>Welcome to your Dashbaord</h2>
+      <p id="welcome"></p>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+  <script>
+    const fullname = localStorage.getItem("fullname");
+const email = localStorage.getItem("email");
+
+if (fullname) {
+  document.getElementById("welcome").textContent =
+    `Hello ${fullname},! Welcome back to your dashboard. Your registered email is ${email}.`;
+} else {
+  window.location.href = "mim.html";
+}
+
+function logout() {
+  localStorage.clear();
+  window.location.href = "mim.html";
+}
+
+  </script>
+  </body>
+</html>

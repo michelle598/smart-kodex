@@ -52,3 +52,37 @@ decreaseBtn3.addEventListener("click", function () {
     countDisplay3.textContent = count3;
   }
 });
+
+// STEP 4: KEYBOARD INTERACTION
+
+let count4 = 0;
+const countDisplay4 = document.getElementById("count4");
+document.addEventListener("keydown", function (ada) {
+  if (ada.key === "+") count4++;
+  if (ada.key === "-") count4--;
+  countDisplay4.textContent = count4;
+});
+
+// STORE THE COUNT IN LOCAL STORAGE
+let count5 = parseInt(localStorage.getItem("val")) || 0;
+
+// ParseInt convert a value to a number
+// "5" -> 5
+const countDisplay5 = document.getElementById("count5");
+countDisplay5.textContent = count5;
+
+const increaseBtn5 = document.getElementById("increaseBtn5");
+
+increaseBtn5.addEventListener("click", function () {
+  count5++;
+  localStorage.setItem("val", count5);
+
+  countDisplay5.textContent = count5;
+});
+
+const resetBtn5 = document.getElementById("resetBtn5");
+resetBtn5.addEventListener("click", function () {
+  count5 = 0;
+  localStorage.setItem("val", count5);
+  countDisplay5.textContent = count5;
+});

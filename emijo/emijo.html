@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Mood Board</title>
+    <link rel="stylesheet" href="/emijo/emijo.css">
+  </head>
+  <body>
+    <h1>🎨 Emoji Mood Board</h1>
+    <p>Select your mood for today!</p>
+
+    <div class="emoji-container">
+      <button onclick="setMood('😊 Happy')">😊</button>
+      <button onclick="setMood('😢 Sad')">😢</button>
+      <button onclick="setMood('😡 Angry')">😡</button>
+      <button onclick="setMood('😴 Sleepy')">😴</button>
+      <button onclick="setMood('🤩 Excited')">🤩</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+      function setMood(mood) {
+        output.innerHTML = `<p>Your mood is: <strong>${mood}</strong></p>`;
+      }
+    </script>
+  </body>
+</html>

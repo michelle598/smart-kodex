@@ -1,0 +1,39 @@
+   body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #dbeafe, #e0f2fe);
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #1e3a8a;
+    }
+
+    input, select, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #1e3a8a;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    #output {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

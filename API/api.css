@@ -1,0 +1,17 @@
+body {
+  font-family: Arial;
+  text-align: center;
+}
+
+#users {
+  margin-top: 20px;
+  
+}
+
+.user {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: red;
+  color: white;
+}

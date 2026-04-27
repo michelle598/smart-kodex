@@ -115,3 +115,37 @@ para.style.fontSize = "24px";
 // Add it to the page
 document.body.appendChild(para);
 
+//9.
+    const button = document.getElementById("changeBtn");
+
+    button.addEventListener("click", function () {
+      // Generate random color
+      const randomColor =
+        "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+      document.body.style.backgroundColor = randomColor;
+    });
+
+    // 10.
+        const addBtn = document.getElementById("addBtn");
+        const removeBtn = document.getElementById("removeBtn");
+        const list = document.getElementById("list");
+
+        let count = 1;
+
+        // Add item
+        addBtn.addEventListener("click", function () {
+          const li = document.createElement("li");
+          li.textContent = "Item " + count;
+          list.appendChild(li);
+          count++;
+        });
+
+        // Remove last item
+        removeBtn.addEventListener("click", function () {
+          if (list.lastElementChild) {
+            list.removeChild(list.lastElementChild);
+            count--;
+          }
+        });
+

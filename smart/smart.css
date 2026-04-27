@@ -1,0 +1,159 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+  
+.dark {
+  background-color: red;
+  background-color: black;
+  color: white;
+}
+/* ===== Navbar Styling ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: white;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ===== Menu Links ===== */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* ===== Hamburger Button ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* ===== Responsive Menu ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: black;
+    flex-direction: column;
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .nav-links.display {
+    height: 200px; /* enough to reveal links */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* DARK MODE STYLING */
+
+.container {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.dark-mode {
+  background: #111;
+  color: white;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* .switch input {
+  display: none;
+} */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: yellow;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: red;
+  border-radius: 50%;
+}
+input, select,button {
+ padding: 10px;
+ margin: 10px;
+ border-radius: 8px;
+ border: 1px solid #ccc;
+ background-color: blue;
+ color: wheat;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition:  0.3s ease;
+
+}
+button:hover {
+  background-color: #555;
+}
+
+#output {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+#output:hover {
+  background-color: #555;
+}
+      
